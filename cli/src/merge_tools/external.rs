@@ -550,7 +550,7 @@ mod tests {
         // Patterns in pattern: not expanded recursively
         assert_eq!(
             interpolate_variables(&["$left_right".to_owned()], &patterns),
-            ["$left $right"],
+            ["'$left $right'"],
         );
     }
 
